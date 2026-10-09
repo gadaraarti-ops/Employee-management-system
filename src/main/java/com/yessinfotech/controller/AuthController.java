@@ -17,7 +17,10 @@ import com.yessinfotech.service.UserService;
 
 @RestController
 @RequestMapping("/auth")
-@CrossOrigin(origins = "http://localhost:3000")
+@CrossOrigin(origins = {
+	    "http://localhost:3000",
+	    "https://employee-management-frontend-git-main-aaru23.vercel.app"
+	})
 public class AuthController {
 	@Autowired
 	private UserService userService;
